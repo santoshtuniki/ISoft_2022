@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <groups>
+      <run>
+        <exclude name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pom.testcases.TC002">
+        <methods>
+          <include name="irctcAccommodations"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- pom.testcases.TC002 -->
+      <class name="pom.testcases.TC001">
+        <methods>
+          <include name="irctcSignUp"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- pom.testcases.TC001 -->
+      <class name="pom.testcases.TC003">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="irctcFtrServices"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- pom.testcases.TC003 -->
+      <class name="pom.testcases.TC004">
+        <methods>
+          <include name="irctcSaloon"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- pom.testcases.TC004 -->
+      <class name="pom.testcases.TC005">
+        <methods>
+          <include name="irctcGstvalidation"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- pom.testcases.TC005 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
